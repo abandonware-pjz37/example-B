@@ -14,7 +14,7 @@ script:
     - cd ..
     - mkdir _builds
     - cd _builds
-    - cmake ..
+    - cmake -DCMAKE_INSTALL_PREFIX=${EXAMPLE_A_ROOT} ..
     - cmake --build .
     - ctest -V
     - cmake --build . --target install
