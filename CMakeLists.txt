@@ -12,4 +12,4 @@ add_executable(example_B_test test.cpp)
 target_link_libraries(example_B_test example_B)
 
 enable_testing()
-add_test("Example B simple test" example_B_test)
+add_test("Example-B-simple-test" example_B_test)
