@@ -5,6 +5,13 @@ compiler:
     - gcc
 
 script:
+    - export EXAMPLE_A_ROOT=`pwd`/Install
+    - wget https://github.com/forexample/example-A/archive/v1.0.1.tar.gz
+    - tar -xf *.tar.gz
+    - cd example-A-*
+    - cmake -DCMAKE_INSTALL_PREFIX=${EXAMPLE_A_ROOT} . 
+    - cmake --build . --target install
+    - cd ..
     - mkdir _builds
     - cd _builds
     - cmake ..
