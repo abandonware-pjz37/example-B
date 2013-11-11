@@ -17,4 +17,4 @@ script:
     - cmake ..
     - cmake --build .
     - ctest -V
-    - cmake --build --target install .
+    - cmake --build . --target install
