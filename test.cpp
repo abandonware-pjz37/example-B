@@ -1,5 +1,9 @@
-#include "boo.hpp"
+#include <cstdlib> // EXIT_SUCCESS
+#include <iostream> // std::cout
+#include "example_B/boo.hpp"
 
 int main() {
-  return example_B::boo();
+  int result = example_B::boo();
+  std::cout << "result is " << result << std::endl;
+  return EXIT_SUCCESS;
 }
